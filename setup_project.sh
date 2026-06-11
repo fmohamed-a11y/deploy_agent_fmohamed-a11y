@@ -16,3 +16,10 @@ cp attendance_checker.py "${TARGET_DIR}/attendance_checker.py"
 cp assets.csv "${TARGET_DIR}/Helpers/assets.csv"
 cp config.json "${TARGET_DIR}/Helpers/config.json"
 cp reports.log "${TARGET_DIR}/reports/reports.log"
+read -p "Updated Warning/Failure thresholds?(Y/N): " ANSWER
+ANSWER=$(echo "$ANSWER" | tr '[:upper:]' '[:lower:]')
+if [ "$ANSWER" = "y" ]; then
+	echo "yes"
+else
+	echo "no"
+fi
