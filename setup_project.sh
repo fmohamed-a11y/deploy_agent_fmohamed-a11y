@@ -1,7 +1,5 @@
 #!/usr/bin/env bash 
 PROJECT_NAME="attendance_tracker"
-read -p "Enter the project suffix (e.g. v1):" INPUT
-TARGET_DIR="${PROJECT_NAME}_${INPUT}"
 cleanup() {
 	if [ -d "${TARGET_DIR}" ]; then 
 		tar -czf "${TARGET_DIR}_archive.tar.gz" "${TARGET_DIR}"
@@ -10,6 +8,8 @@ cleanup() {
 	exit
 }
 trap cleanup SIGINT 
+read -p "Enter the project suffix (e.g. v1):" INPUT
+TARGET_DIR="${PROJECT_NAME}_${INPUT}"
 mkdir -p "${TARGET_DIR}/Helpers"
 mkdir -p "${TARGET_DIR}/reports"
 cp attendance_checker.py "${TARGET_DIR}/attendance_checker.py"
