@@ -37,3 +37,14 @@ fi
 else
 	echo "no"
 fi
+if command -v python3 > /dev/null 2>&1; then 
+	echo "Success: python3 is installed"
+	python3 --version
+else
+	echo "Warning: python3 is not installed"
+fi
+if [[ -f "${TARGET_DIR}/attendance_checker.py" ]] && [[ -d "${TARGET_DIR}/Helpers" ]] && [[ -d "${TARGET_DIR}/reports" ]]; then
+	echo "****Directory Structure is SUCCESSFULLY verified****"
+else
+	echo -e "******ALERT!!!******:\nSetup failed - directory structure is invalid"
+fi
