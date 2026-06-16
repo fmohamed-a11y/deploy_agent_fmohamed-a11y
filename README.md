@@ -8,17 +8,23 @@ Built as part of a shell scripting summative project, this script automates the 
 git clone https://github.com/fmohamed-a11y/deploy_agent_fmohamed-a11y
 cd deploy_agent_fmohamed-a11y
 
+
+
 2.Execute permission
 
 chmod +x setup_project.sh 
+
+
 
 3.Run the script
 
 ./setup_project.sh
 
+
 ## How to trigger the archive feature 
 
 Press Ctrl+C at any point while the script is running ...
+
 
 ## Project Structure 
 
