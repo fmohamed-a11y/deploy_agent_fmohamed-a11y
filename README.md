@@ -22,7 +22,7 @@ Press Ctrl+C at any point while the script is running ...
 
 ## Project Structure 
 
-...
+```
 
 attendance_tracker_{input}/
 ├── attendance_checker.py
@@ -31,7 +31,7 @@ attendance_tracker_{input}/
 │   └── config.json
 └── reports/
     └── reports.log
-
+```
 [Video Walkthrough](https://drive.google.com/drive/folders/1StmnTSV5aW6B9uw_ckO41wC5wqmk3-zw?usp=sharing)
 
 
