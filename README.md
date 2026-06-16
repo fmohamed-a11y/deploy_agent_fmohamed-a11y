@@ -3,16 +3,16 @@ Built as part of a shell scripting summative project, this script automates the 
 
 ## How to run it 
 
-1. Clone the repository
+1.Clone the repository
 
 git clone https://github.com/fmohamed-a11y/deploy_agent_fmohamed-a11y
 cd deploy_agent_fmohamed-a11y
 
-2. Execute permission
+2.Execute permission
 
 chmod +x setup_project.sh 
 
-3. Run the script
+3.Run the script
 
 ./setup_project.sh
 
